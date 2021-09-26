@@ -1,4 +1,4 @@
-  	(function($) {
+ 	(function($) {
   		var pageToFetch = 2;
   		var maxPages = 1;
   		$('#load-more-comments-btn').on('click', function(e) {
@@ -40,4 +40,6 @@
   				btn.removeClass('disabled');
   				alert('Loading more comments failed. Please try again later.');
   			});
-  			ret
+  			return false;
+  		});
+  	})(jQuery);
